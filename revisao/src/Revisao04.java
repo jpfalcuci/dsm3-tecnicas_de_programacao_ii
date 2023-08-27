@@ -87,5 +87,19 @@ public class Revisao04 {
 
         System.out.print("\nParalelismo com method reference (em ordem): ");
         listaValores.parallelStream().forEachOrdered(System.out::print);
+
+        // Lista de objetos Aluno
+        List<Aluno> listaAlunos = new ArrayList<Aluno>();
+
+        listaAlunos.add(new Aluno("a123", "Engenheiro"));
+        listaAlunos.add(new Aluno("b321", "Joãozinho"));
+        listaAlunos.add(new Aluno("kkk12", "Ana"));
+
+        // Procurar o aluno "b321"; pode passar qualquer nome pois o equals só compara o ra
+        Aluno alunoBusca = new Aluno("b321", "Nome X");
+        System.out.println("\n\nTem aluno: " + listaAlunos.contains(alunoBusca));
+
+        // Remove o aluno "b321"
+        listaAlunos.remove(alunoBusca);
     }
 }

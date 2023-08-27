@@ -82,6 +82,28 @@ Em Java, é possível declarar constantes usando a palavra-chave `final`. Consta
 - Strings são imutáveis. Qualquer alteração cria novas strings. No "String Pool", strings idênticas são reutilizadas para economizar memória.
 - `@Override` indica sobrescrita de método e ajuda a prevenir erros de digitação nos nomes dos métodos.
 
+## Herança, Overriding e Overloading
+
+- **Herança:**
+  - Possibilidade de compartilhar coisas e evitar repetição de códigos.
+  - No Java, trabalha-se com herança única. Em algumas linguagens, é permitida herança múltipla.
+  - Uma classe pode ter apenas um pai.
+  - A maior vantagem é a de encapsular e abstrair o código.
+  - Polimorfismo é a capacidade que um objeto tem de tomar muitas formas, ou se transformar no outro.
+  - Usa-se o termo "é um" para heranças: Cachorro é um animal.
+
+- **Overriding (Sobrescrita):**
+  - Ocorre quando um método de uma superclasse é sobrescrito por um método de mesmo nome de uma subclasse.
+  - Os métodos sobrescritos não podem ter um modificador mais restritivo do que o método original.
+
+- **Overloading (Sobrecarga):**
+  - Ocorre quando mais de um método com o mesmo nome é implementado (flexibilidade).
+  - Pode se dar apenas pela diferenciação dos atributos recebidos.
+
+- **this e super:**
+  - this.x: Referência ao objeto atual.
+  - super.x: Referência ao objeto pai.
+
 ## API e HTTP
 
 Uma API (Interface de Programação de Aplicativos) é um conjunto de regras e protocolos que permite que diferentes softwares se comuniquem. As solicitações são feitas utilizando o protocolo HTTP (Hypertext Transfer Protocol).
