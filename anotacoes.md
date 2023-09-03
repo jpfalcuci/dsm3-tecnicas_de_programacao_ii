@@ -104,6 +104,22 @@ Em Java, é possível declarar constantes usando a palavra-chave `final`. Consta
   - this.x: Referência ao objeto atual.
   - super.x: Referência ao objeto pai.
 
+## SOLID
+
+O princípio SOLID é uma abordagem de design de software que visa criar código robusto, flexível e de fácil manutenção, seguindo o lema "Código fechado para mudança e aberto para extensões".
+
+- **Extensão (Extends):**
+
+  - Códigos extensíveis permitem especialização, sem alterar o código original que já está em execução.
+  - Isso é alcançado através da herança, onde classes especializadas herdam comportamentos e propriedades de classes base.
+  - Classes abstratas são frequentemente usadas para criar hierarquias de herança, permitindo a definição de métodos que devem ser implementados pelas subclasses.
+
+- **Classes Abstratas:**
+
+  - Classes abstratas são classes de especificação e definição.
+  - São projetadas para serem herdadas e não podem ser instanciadas diretamente.
+  - Métodos de uma classe abstrata devem obrigatoriamente ser implementados pelas classes que a herdam.
+
 ## API e HTTP
 
 Uma API (Interface de Programação de Aplicativos) é um conjunto de regras e protocolos que permite que diferentes softwares se comuniquem. As solicitações são feitas utilizando o protocolo HTTP (Hypertext Transfer Protocol).

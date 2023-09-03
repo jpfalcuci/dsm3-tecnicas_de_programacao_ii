@@ -1,0 +1,27 @@
+Criar uma classe que represente a definição de um produto, considerando:
+- codigo;
+- tipo de produto; [A, B, C, D]
+- descricao;
+- quantidade;
+- preco de custo;
+
+Crie uma classe de negócio chamada venda com o seguinte método:
+- public Produto vender(Produto produto)
+
+Esta classe deverá calcular o preço de venda considerando:
+Quantidade até 5 unidades:
+- preco de custo acrescido de 35%;
+Acima de 5 unidades:
+- preco de custo acrescido de 25%;
+
+Classe deverá retornar o produto com possibilidade de consulta do valor de venda;
+
+
+Atualização:
+Para estado de MG, acrescentar 8,5%
+
+
+Atualização:
+Venda RS:
+valor unit <= $1000 => + 15%
+valor unit > $1000 => + 10%
