@@ -120,6 +120,16 @@ O princípio SOLID é uma abordagem de design de software que visa criar código
   - São projetadas para serem herdadas e não podem ser instanciadas diretamente.
   - Métodos de uma classe abstrata devem obrigatoriamente ser implementados pelas classes que a herdam.
 
+## Interfaces
+
+- **Interfaces vs. Classes Abstratas:**
+  - Classe abstrata permite definir e implementar comportamentos, mas não é obrigatório.
+  - Interface permite apenas definir comportamentos, mas não implementá-los.
+  - A classe que implementa uma interface deve obrigatoriamente implementar todos os métodos definidos na interface.
+  - Uma classe pode herdar (extends) uma classe abstrata e também implementar (implements) uma ou mais interfaces.
+  - Todos os métodos de uma interface são abstratos.
+  - Uma interface herda (extends) outra ou outras interfaces, mas não implementa (implements) os métodos da interface herdada.
+
 ## API e HTTP
 
 Uma API (Interface de Programação de Aplicativos) é um conjunto de regras e protocolos que permite que diferentes softwares se comuniquem. As solicitações são feitas utilizando o protocolo HTTP (Hypertext Transfer Protocol).
