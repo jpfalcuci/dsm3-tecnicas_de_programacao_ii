@@ -1,5 +1,9 @@
 package ExercicioBanco;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 public class Conta {
 
     private Integer numero;
@@ -7,6 +11,10 @@ public class Conta {
     private Double saldo;
 
     private Double limite;
+
+    private Double emprestimo;
+
+    private List<String> extrato = new ArrayList<>();
 
     /**
      * Construtor da classe Conta
@@ -35,6 +43,17 @@ public class Conta {
 
     public void atualizarSaldo(Double valor) {
         this.saldo += valor;
+
+        String  tipoMovimentacao = valor < 0 ? "Saque" : "Depósito";
+        String registro = new Date() + " " + tipoMovimentacao + " " + valor;
+        extrato.add(registro);
+    }
+
+    public void mostrarExtrato() {
+        System.out.println("Extrato da conta " + numero);
+        this.extrato.forEach(e -> {
+            System.out.println(e);
+        });
     }
 
     public Double getSaldo() {
@@ -49,12 +68,21 @@ public class Conta {
         this.limite = limite;
     }
 
+    public Double getEmprestimo() {
+        return emprestimo;
+    }
+
+    public void setEmprestimo(Double emprestimo) {
+        this.emprestimo = emprestimo;
+    }
+
     @Override
     public String toString() {
         return "Conta{" +
                 "numero=" + numero +
                 ", saldo=" + saldo +
                 ", limite=" + limite +
+                ", emprestimo=" + emprestimo +
                 '}';
     }
 }

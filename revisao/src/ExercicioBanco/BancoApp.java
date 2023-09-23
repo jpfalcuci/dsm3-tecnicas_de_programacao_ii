@@ -30,5 +30,16 @@ public class BancoApp {
 
         movimentacao.sacar(fabio, 1500D);
         System.out.println(fabio);
+
+        // Teste do Banco Duda
+        System.out.println("\nMovimentações Banco Duda");
+        Conta duda = new Conta(666, 1000D);
+        DudaBankMovimentacao movimentacaoDuda = new DudaBankMovimentacao();
+        movimentacaoDuda.depositar(duda, 1000D);
+        System.out.println(duda);
+        movimentacaoDuda.emprestimo(duda, 2000D);
+        System.out.println(duda);
+
+        duda.mostrarExtrato();
     }
 }
