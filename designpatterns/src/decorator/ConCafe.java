@@ -1,4 +1,4 @@
-package cafeteria;
+package decorator;
 
 public class ConCafe extends BlendDecorator {
 
